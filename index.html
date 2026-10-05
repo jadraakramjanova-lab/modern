@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldChat — Modern Messenger</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">G</div>
+
+            <div>
+                <h1>GoldChat</h1>
+                <span>Modern Messenger</span>
+            </div>
+        </div>
+
+
+        <div class="profile-card">
+
+            <div class="avatar avatar-main">
+                AJ
+                <i></i>
+            </div>
+
+            <div class="profile-text">
+                <strong>Jadra Akramjanova</strong>
+                <span>● Onlayn</span>
+            </div>
+
+            <button id="profileMenu">•••</button>
+
+        </div>
+
+
+        <div class="search">
+
+            <span>⌕</span>
+
+            <input
+                id="search"
+                type="text"
+                placeholder="Chatlarni qidirish..."
+            >
+
+            <kbd>⌘ K</kbd>
+
+        </div>
+
+
+        <div class="tabs">
+
+            <button class="tab active">
+                Barchasi
+            </button>
+
+            <button class="tab">
+                O‘qilmagan
+            </button>
+
+            <button class="tab">
+                Guruhlar
+            </button>
+
+        </div>
+
+
+        <div class="chat-list" id="chatList"></div>
+
+
+        <div class="sidebar-footer">
+
+            <button>
+                ⚙
+                <span>Sozlamalar</span>
+            </button>
+
+            <button>
+                ?
+                <span>Yordam</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= CHAT ================= -->
+
+    <main class="chat">
+
+        <header class="chat-header">
+
+            <div class="chat-person">
+
+                <div class="avatar" id="headerAvatar">
+                    SA
+                    <i></i>
+                </div>
+
+                <div>
+
+                    <h2 id="headerName">
+                        Sardor Dev
+                    </h2>
+
+                    <span id="headerStatus">
+                        ● Hozir onlayn
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="chat-actions">
+
+                <button id="chatSearch">
+                    ⌕
+                </button>
+
+                <button id="videoBtn">
+                    ◉
+                </button>
+
+                <button id="callBtn">
+                    ☎
+                </button>
+
+                <button id="infoBtn">
+                    ⓘ
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= MESSAGES ================= -->
+
+        <section
+            class="messages"
+            id="messages"
+        ></section>
+
+
+        <!-- TYPING -->
+
+        <div
+            class="typing"
+            id="typing"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+            <label>Sardor yozmoqda...</label>
+        </div>
+
+
+        <!-- ================= INPUT ================= -->
+
+        <footer class="composer">
+
+            <button
+                class="composer-btn"
+                id="attachBtn"
+            >
+                ＋
+            </button>
+
+
+            <div class="message-box">
+
+                <input
+                    id="messageInput"
+                    type="text"
+                    placeholder="Xabar yozing..."
+                    autocomplete="off"
+                >
+
+
+                <button id="emojiBtn">
+                    ☺
+                </button>
+
+            </div>
+
+
+            <button
+                class="mic-btn"
+                id="micBtn"
+            >
+                🎙
+            </button>
+
+
+            <button
+                class="send-btn"
+                id="sendBtn"
+            >
+                ➤
+            </button>
+
+        </footer>
+
+
+        <!-- EMOJI -->
+
+        <div
+            class="emoji-panel"
+            id="emojiPanel"
+        >
+
+            <button>😀</button>
+            <button>😂</button>
+            <button>😍</button>
+            <button>🔥</button>
+            <button>❤️</button>
+            <button>👍</button>
+            <button>👏</button>
+            <button>🎉</button>
+            <button>🚀</button>
+            <button>💻</button>
+            <button>✨</button>
+            <button>😎</button>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= INFO ================= -->
+
+    <aside
+        class="info-panel"
+        id="infoPanel"
+    >
+
+        <div class="info-cover"></div>
+
+        <div class="info-body">
+
+            <div class="avatar info-avatar">
+                SA
+            </div>
+
+            <h2 id="infoName">
+                Sardor Dev
+            </h2>
+
+            <span class="info-username">
+                @sardor_dev
+            </span>
+
+
+            <div class="status-pill">
+                ● Onlayn
+            </div>
+
+
+            <div class="info-section">
+
+                <span>HAQIDA</span>
+
+                <p>
+                    Full Stack Developer 💻
+                    <br>
+                    Texnologiya • Kod • IT
+                </p>
+
+            </div>
+
+
+            <div class="info-section">
+
+                <span>MEDIA</span>
+
+                <div class="media-grid">
+
+                    <div>📷</div>
+                    <div>🎬</div>
+                    <div>📄</div>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-actions">
+
+                <button>
+                    🔔 Bildirishnomalar
+                </button>
+
+                <button>
+                    🔍 Qidiruv
+                </button>
+
+                <button class="danger">
+                    🚫 Bloklash
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+</div>
+
+
+<!-- ================= CREATE MENU ================= -->
+
+<div
+    class="floating-menu"
+    id="floatingMenu"
+>
+
+    <button>
+        📷 Rasm yuborish
+    </button>
+
+    <button>
+        📄 Fayl yuborish
+    </button>
+
+    <button>
+        📍 Joylashuv yuborish
+    </button>
+
+</div>
+
+
+<input
+    type="file"
+    id="fileInput"
+    hidden
+>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
